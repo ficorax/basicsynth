@@ -1,0 +1,3 @@
+// the configured options and settings for Tutorial
+#define BasicSynth_VERSION_MAJOR @basicsynth_VERSION_MAJOR@
+#define BasicSynth_VERSION_MINOR @basicsynth_VERSION_MINOR@

@@ -1,0 +1,10 @@
+CMakeFiles/
+basicsynth
+build/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+imgui.ini
+state.json
+version.h
+shared_cpp

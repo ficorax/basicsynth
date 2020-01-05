@@ -19,20 +19,6 @@
 #include "shared_cpp/windowmanager.h"
 #include "shared_cpp/stateserialiser.h"
 
-void ProcessCommandLine(int argc, char* argv[])
-{
-#if 0
-	pConfig = new Config();
-	pConfig->Init();
-	
-	if(pConfig->ParseCommandLine(argc, argv) != kError_OK)
-	{
-		LOGINFO("Error parsing command line... aborting \n");
-		exit(1);
-	}
-#endif
-}
-
 int main(int argc, char* argv[])
 {
 	uint64_t	performanceFrequency;
@@ -51,8 +37,6 @@ int main(int argc, char* argv[])
 	}
 
 	// check for command line args
-	
-	ProcessCommandLine(argc, argv);
 	
 	// SDL stuff
 	if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0)
@@ -249,8 +233,6 @@ int main(int argc, char* argv[])
 	SDL_DestroyWindow(window);
 	SDL_Quit();
 	
-	//pMemory->Destroy();
-
 	LOGINFO("Exiting...\n");
 	
 	return 0;
